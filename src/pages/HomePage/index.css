@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .home-page-container {
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: row;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .home-page-left-container {
   width: 6.563rem;
@@ -17,17 +17,21 @@
 }
 .home-page-middle-container {
   display: flex;
-  flex: 10;
+  flex: 2;
   /* background-color: rgba(233, 232, 232, 0.3); */
-  background-color:   rgb(253, 155, 43);
+  background-color: rgb(253, 155, 43);
   padding-inline: 2.188rem;
   display: flex;
   flex-direction: column;
+  overflow-x: auto;
+}
+.home-page-middle-container ::-webkit-scrollbar {
+  display: block;
 }
 
 .home-page-right-container {
   display: flex;
-  flex: 5;
+  flex: 1;
   background-color: white;
 }
 
@@ -60,15 +64,15 @@
 }
 .hello-row-left {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   gap: 0.35rem;
   flex-direction: column;
 }
 .hello-row-name-bottom {
-  font: 1.75rem;
+  font-size: 1.85rem;
   color: black;
   font-weight: 700;
 }
@@ -90,12 +94,13 @@
   background-color: transparent;
   outline: none;
   border: none;
-  flex: 5;
+  flex: 1;
   height: 100%;
   caret-color: orange;
   color: #000000;
   font-size: 1.5rem;
   font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 .hello-right-search {
   flex: 1;
@@ -104,11 +109,12 @@
   color: #61656f;
   font-size: 1.5rem;
   font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 .middle-middle-container-banner {
   margin-top: 1rem;
   width: 100%;
-  height: 20.125rem;
+  height: 21.125rem;
   background-color: #2f2f2f;
   border-radius: 2.5rem;
   display: flex;
@@ -120,20 +126,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-block: 2rem;
+  padding-block: 1.3rem;
   padding-left: 3.625rem;
-  
 }
 .banner-right {
   flex: 3;
   height: 100%;
   /* background-color: aliceblue; */
   display: flex;
+  border-radius: 2.5rem;
   flex-direction: column;
   background-image: url("../../assets/veggiepizza.png");
   background-size: auto;
   background-repeat: no-repeat;
-
   background-position: 0% 10%;
 }
 .banner-left-text {
@@ -145,10 +150,16 @@
   color: #ff9921;
 }
 
-.banner-left-para-text{
-  padding-top: 1rem;
+.banner-left-para-text {
   font-size: 1rem;
   color: white;
   font-weight: 100;
   line-height: 23.15px;
+}
+.order-detail-set {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  overflow-x: auto;
+  gap: 1rem;
 }

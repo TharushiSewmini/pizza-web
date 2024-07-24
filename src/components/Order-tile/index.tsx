@@ -15,11 +15,11 @@ const OrderTile = ({
 }: OrderPropos) => {
   const [currentQty, setCurrentQty] = useState(0);
   function incQuantity(): void {
-    setCurrentQty((prevQty) => prevQty+1);
+    setCurrentQty((prevQty) => prevQty + 1);
   }
   function decQuantity(): void {
     if (currentQty > 0) {
-      setCurrentQty((prevQty) => prevQty-1);
+      setCurrentQty((prevQty) => prevQty - 1);
     }
   }
 
@@ -39,9 +39,13 @@ const OrderTile = ({
           </span>
           {/* adding row */}
           <div className="order-tile-adding-row">
-            <button className="add-button" onClick={decQuantity}>-</button>
+            <button className="add-button" onClick={decQuantity}>
+              -
+            </button>
             <span className="oredr-tile-qty">{currentQty}</span>
-            <button className="add-button" onClick={incQuantity}>+</button>
+            <button className="add-button" onClick={incQuantity}>
+              +
+            </button>
           </div>
         </div>
       </div>

@@ -4,6 +4,7 @@ import user from "../../assets/user.jpeg";
 import notification from "../../assets/notification.svg";
 import OrderTile from "../../components/Order-tile";
 import pizza1 from "../../assets/pizza1.png";
+import MyButton from "../../components/Re-Button";
 const CheckOutPage = () => {
   return (
     <div className="checkout-page-container">
@@ -57,7 +58,18 @@ const CheckOutPage = () => {
           price={"12"}
           itemImage={pizza1}
         />
-        
+      </div>
+      <div className="checkout-page-below-container">
+        <div className="checkout-page-total-price-row">
+          <span className="checkout-page-total-price">Total Price</span>
+          <span className="checkout-page-total-price-value">20$</span>
+        </div>
+        <MyButton
+          buttonText="Checkout"
+          borderRadius="1.25rem"
+          buttonwidth="9.313rem"
+          textSize="1.5rem"
+        />
       </div>
     </div>
   );

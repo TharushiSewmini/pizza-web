@@ -5,9 +5,13 @@ import email from "../../assets/Email.svg";
 import account from "../../assets/Account.svg";
 import search from "../../assets/search.svg";
 import veggiepizza from "../../assets/veggiepizza.png";
+import pizza2 from "../../assets/pizza2.png";
+import pizza3 from "../../assets/pizza3.png";
+
 import "./index.css";
 import MyButton from "../../components/Re-Button";
 import CheckOutPage from "../CheckOutPage";
+import OrderDetailTile from "../../components/Order-Detail-tile";
 
 const HomePage = () => {
   return (
@@ -52,8 +56,8 @@ const HomePage = () => {
             <div className="banner-left-para-text">
               Discover the unparalleled joy of our gourmet pizza, crafted with
               the finest ingredients and baked to perfection. Each slice is a
-              symphony of flavors, with a crispy crust, rich tomato sauce, and
-              an irresistible blend of cheeses that melt in your mouth.
+              symphony of flavors, with a crispy crust, rich tomato sauce, that
+              melt in your mouth.
             </div>
 
             <div className="banner-order-now-button">
@@ -61,6 +65,26 @@ const HomePage = () => {
             </div>
           </div>
           <div className="banner-right"></div>
+        </div>
+        <div className="order-detail-set">
+          <OrderDetailTile
+            pizzaImage={pizza2}
+            itemName={"Pizza with Peperoni"}
+            time={"14-12"}
+            price={"20"}
+          />
+          <OrderDetailTile
+            pizzaImage={pizza3}
+            itemName={"Pizza with Peperoni"}
+            time={"30-50"}
+            price={"40"}
+          />
+          <OrderDetailTile
+            pizzaImage={pizza2}
+            itemName={"Pizza with Peperoni"}
+            time={"10-20"}
+            price={"50"}
+          />
         </div>
       </div>
       <div className="home-page-right-container">
