@@ -7,6 +7,7 @@ import search from "../../assets/search.svg";
 import veggiepizza from "../../assets/veggiepizza.png";
 import "./index.css";
 import MyButton from "../../components/Re-Button";
+import CheckOutPage from "../CheckOutPage";
 
 const HomePage = () => {
   return (
@@ -62,7 +63,9 @@ const HomePage = () => {
           <div className="banner-right"></div>
         </div>
       </div>
-      <div className="home-page-right-container"></div>
+      <div className="home-page-right-container">
+        <CheckOutPage />
+      </div>
     </div>
   );
 };

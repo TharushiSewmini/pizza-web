@@ -1,0 +1,64 @@
+.order-tile-container {
+
+  background-color: rgba(180, 188, 207, 0.302);
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(61, 61, 61, 0.2);
+ padding-block: 0.5rem;
+}
+.order-tile-pizza-image {
+  margin-left: 1rem;
+  margin-right: 1.25rem;
+  height: 3.375rem;
+  width: 3.375rem;
+  border-radius: 100%;
+}
+.order-tile-detail-container {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.order-tile-detail-container-first {
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.order-tile-detail-container-second {
+  color: #61656f;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+.order-tile-detail-container-third {
+  color: #01c550;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+.order-tile-detail-container-third-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.order-tile-adding-row {
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+.add-button{
+    font-size: 1.5rem;
+    height: 2rem;
+    width: 2rem;
+    color: #000000;
+    font-weight: bolder;
+    background-color: white;
+    border: none;
+    border-radius: 0.469rem;
+
+}
