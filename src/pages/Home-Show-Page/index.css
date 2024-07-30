@@ -1,21 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.home-page-container {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  font-family: "Poppins", sans-serif;
-}
-.home-page-left-container {
-  width: 6.563rem;
-  padding-top: 3.25rem;
-  background-color: white;
-
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
 .home-page-middle-container {
   display: flex;
   flex: 2;
@@ -25,9 +7,17 @@
   display: flex;
   flex-direction: column;
   overflow-x: auto;
+  position: relative;
 }
+
 .home-page-middle-container ::-webkit-scrollbar {
   display: block;
+}
+
+.home-page-middle-inside-container {
+  height: 100%;
+  width: 100%;
+  flex: 1;
 }
 
 .home-page-right-container {
@@ -42,10 +32,12 @@
   object-fit: cover;
   margin-bottom: 1rem;
 }
+
 .all-icon-unselect {
   height: 2.063rem;
   width: 2.063rem;
 }
+
 .all-another-icons {
   width: 100%;
   display: flex;
@@ -63,6 +55,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
 .hello-row-left {
   color: white;
   font-size: 1.6rem;
@@ -72,6 +65,7 @@
   gap: 0.35rem;
   flex-direction: column;
 }
+
 .hello-row-name-bottom {
   font-size: 1.85rem;
   color: black;
@@ -91,6 +85,7 @@
   align-items: center;
   padding-left: 2rem;
 }
+
 .hello-row-input {
   background-color: transparent;
   outline: none;
@@ -103,15 +98,18 @@
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
+
 .hello-right-search {
   flex: 1;
 }
+
 .hello-row-input::placeholder {
   color: #61656f;
   font-size: 1.5rem;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
+
 .middle-middle-container-banner {
   margin-top: 1rem;
   width: 100%;
@@ -122,6 +120,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
 .banner-left {
   flex: 5;
   display: flex;
@@ -130,6 +129,7 @@
   padding-block: 1.3rem;
   padding-left: 3.625rem;
 }
+
 .banner-right {
   flex: 3;
   height: 100%;
@@ -142,11 +142,13 @@
   background-repeat: no-repeat;
   background-position: 0% 10%;
 }
+
 .banner-left-text {
   font-size: 2.813rem;
   font-weight: 700;
   color: #ffffff;
 }
+
 .banner-left-discount {
   color: #ff9921;
 }
@@ -157,10 +159,27 @@
   font-weight: 100;
   line-height: 23.15px;
 }
+
 .order-detail-set {
   display: flex;
   align-items: center;
   flex: 1;
   overflow-x: auto;
   gap: 1rem;
+}
+
+.hello-page-middle-container-tag-set {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  align-items: center;
+}
+
+.hello-page-middle-container-order-menu-row {
+  display: flex;
+  gap: 5rem;
+  font-size: 1.875rem;
+  color: black;
+  font-weight: 700;
+  padding-top: 3.063rem;
 }

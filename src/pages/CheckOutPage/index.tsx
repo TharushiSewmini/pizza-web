@@ -5,7 +5,35 @@ import notification from "../../assets/notification.svg";
 import OrderTile from "../../components/Order-tile";
 import pizza1 from "../../assets/pizza1.png";
 import MyButton from "../../components/Re-Button";
+interface OrderTileProps {
+  pizzaDetails: string;
+  pizzaSize: string;
+  price: string;
+  itemImage: string;
+}
+
 const CheckOutPage = () => {
+  const orderItems: OrderTileProps[] = [
+    {
+      pizzaDetails: "Pizza with Mushrooms",
+      pizzaSize: "8 inch",
+      price: "12",
+      itemImage: pizza1,
+    },
+    {
+      pizzaDetails: "Pizza with Mushrooms",
+      pizzaSize: "8 inch",
+      price: "12",
+      itemImage: pizza1,
+    },
+    {
+      pizzaDetails: "Pizza with Mushrooms",
+      pizzaSize: "8 inch",
+      price: "12",
+      itemImage: pizza1,
+    },
+  ];
+
   return (
     <div className="checkout-page-container">
       <div className="checkout-page-user-details-row">
@@ -40,24 +68,15 @@ const CheckOutPage = () => {
         <div className="checkout-page-order-menu-right">See All</div>
       </div>
       <div className="checkout-page-ordered-set">
-        <OrderTile
-          pizzaDetails={"Pizza with Mushrooms"}
-          pizzaSize={"8 inch"}
-          price={"12"}
-          itemImage={pizza1}
-        />
-        <OrderTile
-          pizzaDetails={"Pizza with Mushrooms"}
-          pizzaSize={"8 inch"}
-          price={"12"}
-          itemImage={pizza1}
-        />
-        <OrderTile
-          pizzaDetails={"Pizza with Mushrooms"}
-          pizzaSize={"8 inch"}
-          price={"12"}
-          itemImage={pizza1}
-        />
+        {orderItems.map((item, index) => (
+          <OrderTile
+            key={index}
+            pizzaDetails={item.pizzaDetails}
+            pizzaSize={item.pizzaSize}
+            price={item.price}
+            itemImage={item.itemImage}
+          />
+        ))}
       </div>
       <div className="checkout-page-below-container">
         <div className="checkout-page-total-price-row">

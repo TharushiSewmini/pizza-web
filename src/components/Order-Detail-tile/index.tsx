@@ -7,12 +7,14 @@ interface OrderDetailTileProps {
   itemName: string;
   time: string;
   price: string;
+  onClick: (e: any) => void;
 }
 const OrderDetailTile = ({
   pizzaImage,
   itemName,
   time,
   price,
+  onClick,
 }: OrderDetailTileProps) => {
   return (
     <div className="order-detail-tile">
@@ -28,7 +30,7 @@ const OrderDetailTile = ({
         <div className="order-detail-tile-right-time">{time} minutes</div>
         <div className="order-detail-tile-right-price-row">
           <div className="order-detail-tile-right-price">${price}</div>
-          <button className="order-detail-tile-right-add-btn">
+          <button className="order-detail-tile-right-add-btn" onClick={onClick}>
             <img src={plus} alt="" className="order-detail-tile-plus" />
           </button>
         </div>
