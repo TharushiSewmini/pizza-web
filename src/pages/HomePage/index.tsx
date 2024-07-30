@@ -14,8 +14,15 @@ import OrderDetailTile from "../../components/Order-Detail-tile";
 import HomeShowPage from "../Home-Show-Page";
 import AddToCartPopUp from "../../components/PopUps/AddToCartPopUp";
 import React, { useState, useEffect } from "react";
+import HomeMiddleContent from "../Home-Middle-Content";
+import { useNavigate } from "react-router-dom";
+import HomeLastContainer from "../Home-Last-Container";
 const HomePage = () => {
- 
+  const navigate = useNavigate();
+
+  const gotoHomePage = () => {
+    navigate("/");
+  };
   return (
     <div className="home-page-container">
      
@@ -24,7 +31,7 @@ const HomePage = () => {
         {/* icons set */}
 
         <div className="all-bookings-container">
-          <img src={all} className="all-icon" />
+          <img src={all} className="all-icon" onClick={gotoHomePage}/>
           <div className="all-another-icons">
             <img src={person} className="all-icon-unselect" />
             <img src={account} className="all-icon-unselect" />
@@ -33,9 +40,9 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <HomeShowPage />
+      <HomeMiddleContent />
       <div className="home-page-right-container">
-        <CheckOutPage />
+        <HomeLastContainer />
       </div>
     </div>
   );

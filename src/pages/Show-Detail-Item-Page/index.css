@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+.show-detail-item-page {
+  display: flex;
+  flex: 2;
+  background-color: rgb(238, 235, 235);
+  padding-inline: 2.188rem;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  position: relative;
+  padding-top: 2rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ff9921;
+}
+.show-detail-page-item-category-name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  background: #ff9921;
+  font-family: "Patua One", serif;
+  margin-bottom: 1rem;
+  border-radius: 10rem;
+  color: white;
+}
+.show-detail-item-set-grid {
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  align-items: flex-start; /* Align items to the top of the container */
+  row-gap: 1.5rem;
+  column-gap: 2rem;
+  scroll-behavior: smooth;
+}
+.show-detail-item-set-grid::-webkit-scrollbar {
+  display: block;
+}
+.show-detail-item-set-grid::-webkit-scrollbar-thumb {
+  background-color: #ffa742;
+  border-radius: 5rem;
+  right: 0;
+}

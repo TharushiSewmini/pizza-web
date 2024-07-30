@@ -8,7 +8,10 @@ interface MyButtonProps {
   BgColor?: string;
   textColor?: string;
   borderRadius?: string;
-  textSize? : string
+  textSize?: string;
+  textWeight?: string;
+  fontFamily?: string;
+  onClick?:(e:any)=>void
 }
 const MyButton = ({
   buttonHeight,
@@ -17,17 +20,23 @@ const MyButton = ({
   BgColor,
   textColor,
   borderRadius,
-  textSize
+  textSize,
+  textWeight,
+  fontFamily,
+  onClick
 }: MyButtonProps) => {
   return (
     <button
+    onClick={onClick}
       className="my-button-container"
       style={{
         backgroundColor: BgColor ? BgColor : "#FF9921",
         borderRadius: borderRadius ? borderRadius : " 0.938rem",
-        width : buttonwidth ? buttonwidth : "12.563rem",
-        height : buttonHeight ? buttonHeight :"3.75rem",
-        fontSize : textSize ? textSize : "1.5rem"
+        width: buttonwidth ? buttonwidth : "12.563rem",
+        height: buttonHeight ? buttonHeight : "3.75rem",
+        fontSize: textSize ? textSize : "1.5rem",
+        fontWeight: textWeight ? textWeight : "700",
+        fontFamily: fontFamily ? fontFamily : "Poppins",
       }}
     >
       {buttonText ? buttonText : "Order Now"}

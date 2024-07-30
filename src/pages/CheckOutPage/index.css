@@ -120,7 +120,7 @@
   padding-bottom: 2rem;
 }
 .checkout-page-ordered-set::-webkit-scrollbar {
-  display: block;
+  display: none;
 }
 .checkout-page-below-container {
   display: flex;

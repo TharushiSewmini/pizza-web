@@ -11,6 +11,7 @@ import pack from "../../assets/pack.svg";
 import "./index.css";
 import OrderMenuTag from "../../components/Order-Menu-tag";
 import AddToCartPopUp from "../../components/PopUps/AddToCartPopUp";
+import { useNavigate } from "react-router-dom";
 interface OrderMenuTagProps {
   itemImage: string;
   itemName: string;
@@ -23,7 +24,10 @@ interface OrderDetailPropos {
   time: string;
   price: string;
 }
-const HomeShowPage = () => {
+interface HomeShowPageProps {
+  onCategoryChecking: (itemName: string) => void;
+}
+const HomeShowPage = ({ onCategoryChecking }: HomeShowPageProps) => {
   const iniitems: OrderMenuTagProps[] = [
     {
       itemImage: pizza,
@@ -73,9 +77,12 @@ const HomeShowPage = () => {
 
   const [isAdd, setIsAdd] = useState(false);
 
-  const handleClick = (clickedItemName: string) => {
-    console.log("clicked");
 
+  const handleClick = (clickedItemName: string) => {
+    //   navigate("./item-details-page");
+ 
+  
+    onCategoryChecking(clickedItemName);
     const updatedItems = items.map((item) => ({
       ...item,
       isClicked: item.itemName === clickedItemName,
@@ -83,22 +90,19 @@ const HomeShowPage = () => {
     setItems(updatedItems);
   };
 
-
-
   const [isVisible, setIsVisible] = useState(false);
 
   const handleAddingItem = () => {
     console.log("clicked");
 
     setIsAdd(true);
-    setIsVisible(true)
+    setIsVisible(true);
     setTimeout(() => {
       setIsVisible(false);
     }, 2000); // 2 seconds
-
   };
-   // Cleanup the timer
- 
+  // Cleanup the timer
+
   return (
     <div className="home-page-middle-container">
       <AddToCartPopUp isVisible={isVisible} />

@@ -33,7 +33,11 @@ const CheckOutPage = () => {
       itemImage: pizza1,
     },
   ];
+  // Assuming price is a string and needs to be converted to a number
+  const totalPrice = orderItems.reduce((acc, item) => acc + parseFloat(item.price), 0);
+  
 
+  
   return (
     <div className="checkout-page-container">
       <div className="checkout-page-user-details-row">
@@ -81,7 +85,7 @@ const CheckOutPage = () => {
       <div className="checkout-page-below-container">
         <div className="checkout-page-total-price-row">
           <span className="checkout-page-total-price">Total Price</span>
-          <span className="checkout-page-total-price-value">20$</span>
+          <span className="checkout-page-total-price-value">{totalPrice}$</span>
         </div>
         <MyButton
           buttonText="Checkout"
