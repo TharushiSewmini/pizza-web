@@ -5,6 +5,7 @@ import notification from "../../assets/notification.svg";
 import OrderTile from "../../components/Order-tile";
 import pizza1 from "../../assets/pizza1.png";
 import MyButton from "../../components/Re-Button";
+import { useNavigate } from "react-router-dom";
 interface OrderTileProps {
   pizzaDetails: string;
   pizzaSize: string;
@@ -12,7 +13,10 @@ interface OrderTileProps {
   itemImage: string;
 }
 
-const CheckOutPage = () => {
+interface CheckOutPageProps {
+  onGotoAddressFiling :(e:any)=>void
+}
+const CheckOutPage = ({onGotoAddressFiling}:CheckOutPageProps) => {
   const orderItems: OrderTileProps[] = [
     {
       pizzaDetails: "Pizza with Mushrooms",
@@ -35,8 +39,10 @@ const CheckOutPage = () => {
   ];
   // Assuming price is a string and needs to be converted to a number
   const totalPrice = orderItems.reduce((acc, item) => acc + parseFloat(item.price), 0);
-  
-
+  const navigate = useNavigate();
+const goToCheckoutForum=(item:string)=>{
+onGotoAddressFiling(item)
+}
   
   return (
     <div className="checkout-page-container">
@@ -92,6 +98,7 @@ const CheckOutPage = () => {
           borderRadius="1.25rem"
           buttonwidth="9.313rem"
           textSize="1.5rem"
+          onClick={()=>goToCheckoutForum(totalPrice.toString())}
         />
       </div>
     </div>

@@ -133,7 +133,7 @@ const HomeShowPage = ({ onCategoryChecking }: HomeShowPageProps) => {
           </div>
 
           <div className="banner-order-now-button">
-            <MyButton />
+            <MyButton buttonHeight="" buttonwidth="" />
           </div>
         </div>
         <div className="banner-right"></div>

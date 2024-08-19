@@ -16,36 +16,6 @@
   flex-direction: column;
 }
 
-.home-page-middle-container {
-  display: flex;
-  flex: 2;
-  /* background-color: rgba(233, 232, 232, 0.3); */
-  background-color: rgb(253, 155, 43);
-  padding-inline: 2.188rem;
-  display: flex;
-  flex-direction: column;
-  overflow-x: auto;
-}
-.home-page-middle-container ::-webkit-scrollbar {
-  display: block;
-}
-
-.home-page-right-container {
-  display: flex;
-  flex: 1;
-  background-color: white;
-}
-
-.all-icon {
-  height: 5.063rem;
-  width: 5.063rem;
-  object-fit: cover;
-  margin-bottom: 1rem;
-}
-.all-icon-unselect {
-  height: 2.063rem;
-  width: 2.063rem;
-}
 .all-another-icons {
   width: 100%;
   display: flex;
@@ -54,113 +24,14 @@
 
   gap: 3rem;
 }
-
-.middle-container-hello-row {
-  width: 100%;
-  margin-top: 4.188rem;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.hello-row-left {
-  color: white;
-  font-size: 1.6rem;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  display: flex;
-  gap: 0.35rem;
-  flex-direction: column;
-}
-.hello-row-name-bottom {
-  font-size: 1.85rem;
-  color: black;
-  font-weight: 700;
+.all-icon {
+  height: 5.063rem;
+  width: 5.063rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 
-.hello-row-right {
-  height: 60px;
-  width: 360px;
-  border-radius: 15px;
-  background-color: white;
-  outline: none;
-  border: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  padding-left: 2rem;
-}
-.hello-row-input {
-  background-color: transparent;
-  outline: none;
-  border: none;
-  flex: 1;
-  height: 100%;
-  caret-color: orange;
-  color: #000000;
-  font-size: 1.5rem;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-}
-.hello-right-search {
-  flex: 1;
-}
-.hello-row-input::placeholder {
-  color: #61656f;
-  font-size: 1.5rem;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-}
-.middle-middle-container-banner {
-  margin-top: 1rem;
-  width: 100%;
-  height: 21.125rem;
-  background-color: #2f2f2f;
-  border-radius: 2.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.banner-left {
-  flex: 5;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-block: 1.3rem;
-  padding-left: 3.625rem;
-}
-.banner-right {
-  flex: 3;
-  height: 100%;
-  /* background-color: aliceblue; */
-  display: flex;
-  border-radius: 2.5rem;
-  flex-direction: column;
-  background-image: url("../../assets/veggiepizza.png");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: 0% 10%;
-}
-.banner-left-text {
-  font-size: 2.813rem;
-  font-weight: 700;
-  color: #ffffff;
-}
-.banner-left-discount {
-  color: #ff9921;
-}
-
-.banner-left-para-text {
-  font-size: 1rem;
-  color: white;
-  font-weight: 100;
-  line-height: 23.15px;
-}
-.order-detail-set {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  overflow-x: auto;
-  gap: 1rem;
+.all-icon-unselect {
+  height: 2.063rem;
+  width: 2.063rem;
 }

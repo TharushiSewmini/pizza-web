@@ -1,13 +1,16 @@
 .home-page-middle-container {
   display: flex;
-  flex: 2;
+  flex: 1;
   /* background-color: rgba(233, 232, 232, 0.3); */
   background-color: rgb(253, 155, 43);
-  padding-inline: 2.188rem;
+  padding-inline: 1rem;
   display: flex;
   flex-direction: column;
   overflow-x: auto;
   position: relative;
+  box-sizing: border-box;
+  padding-top:1rem ;
+  gap: 0.5rem;
 }
 
 .home-page-middle-container ::-webkit-scrollbar {
@@ -18,6 +21,7 @@
   height: 100%;
   width: 100%;
   flex: 1;
+
 }
 
 .home-page-right-container {
@@ -26,39 +30,19 @@
   background-color: white;
 }
 
-.all-icon {
-  height: 5.063rem;
-  width: 5.063rem;
-  object-fit: cover;
-  margin-bottom: 1rem;
-}
 
-.all-icon-unselect {
-  height: 2.063rem;
-  width: 2.063rem;
-}
-
-.all-another-icons {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  gap: 3rem;
-}
 
 .middle-container-hello-row {
   width: 100%;
-  margin-top: 4.188rem;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex: 0.5;
 }
 
 .hello-row-left {
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -67,7 +51,7 @@
 }
 
 .hello-row-name-bottom {
-  font-size: 1.85rem;
+  font-size: 1.5rem;
   color: black;
   font-weight: 700;
 }
@@ -94,7 +78,7 @@
   height: 100%;
   caret-color: orange;
   color: #000000;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
@@ -105,7 +89,7 @@
 
 .hello-row-input::placeholder {
   color: #61656f;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
@@ -113,21 +97,20 @@
 .middle-middle-container-banner {
   margin-top: 1rem;
   width: 100%;
-  height: 21.125rem;
   background-color: #2f2f2f;
   border-radius: 2.5rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex: 4;
 }
 
 .banner-left {
   flex: 5;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding-block: 1.3rem;
-  padding-left: 3.625rem;
+  padding-left: 3rem;
+  gap: 0.4rem;
+  justify-content: center;
 }
 
 .banner-right {
@@ -144,7 +127,7 @@
 }
 
 .banner-left-text {
-  font-size: 2.813rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #ffffff;
 }
@@ -154,9 +137,9 @@
 }
 
 .banner-left-para-text {
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: white;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 23.15px;
 }
 
@@ -166,6 +149,7 @@
   flex: 1;
   overflow-x: auto;
   gap: 1rem;
+  flex: 3;
 }
 
 .hello-page-middle-container-tag-set {
@@ -181,5 +165,5 @@
   font-size: 1.875rem;
   color: black;
   font-weight: 700;
-  padding-top: 3.063rem;
+flex: 1;
 }
